@@ -3,12 +3,12 @@
 {% block title %}Overtime Dashboard{% endblock %}
 
 {% block head %}
+{{ super() }}
 
 {% endblock %}
 
-
-
 {% block scripts %}
+    {{ super() }}
 
 {% endblock %}
 
@@ -27,7 +27,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">Upcoming</a></li>
+                <li><a href="/">Home</a></li>
             </ul>
         </div>
     </div>
@@ -35,7 +35,12 @@
 {% endblock %}
 
 {% block content %}
-{% block page_content %}
+<div class="container-fluid">
+    {% block page_content %}
 
-{% endblock %}
+
+    {% endblock %}
+
+</div>
+
 {% endblock %}
